@@ -5,6 +5,7 @@ import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 import gandolf from '@/images/bird.jpg'
+import gallum from '@/images/gollum.jpg'
 import Image from 'next/image'
 
 export default function Home() {
@@ -21,11 +22,20 @@ export default function Home() {
         <Hero />
         <SecondaryFeatures />
         <div className='flex justify-between items-center gap-x-3 px-12'>
-          <div className="lg:w-1/2 sm:w-full">
+          <div className="lg:w-1/2 sm:w-full flex justify-between gap-x-3">
+          <div>
             <div className="mx-auto shadow-sm rounded-md">
                <Image className="w-11/12" alt="ganddolf" src={gandolf}/>
             </div>
             <p className="italic text-sm py-2">Lord of the Wings Insert</p>
+            </div>
+            <div>
+            <div className="mx-auto shadow-sm rounded-md">
+               <Image className="w-11/12" alt="ganddolf" src={gallum}/>
+            </div>
+            <p className="italic text-sm py-2">Golem Pigeon</p>
+            </div>
+            
           </div>
           <div className="lg:w-1/2 sm:w-full">
             <h3 className="font-semibold text-2xl">
